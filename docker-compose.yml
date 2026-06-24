@@ -8,8 +8,6 @@ services:
       - "25565:25565"
     volumes:
       - ./server_data:/server
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
     stdin_open: true
     tty: true
     restart: unless-stopped
