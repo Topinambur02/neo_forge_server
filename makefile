@@ -1,0 +1,36 @@
+.PHONY: clean restart run stop console
+
+init:
+	docker compose up -d
+
+run:
+	cd server_data && ./run.sh
+
+stop:
+	docker compose 
+	
+console:
+	docker attach neoforge-server
+
+clean:
+	@echo "Остановка контейнеров..."
+	docker compose down
+	@echo "Удаление кэша установки и бинарников NeoForge..."
+	rm -rf server_data/libraries/
+	rm -rf server_data/versions/
+	rm -rf server_data/defaultconfigs/
+	rm -f server_data/run.sh
+	rm -f server_data/run.bat
+	rm -f server_data/user_jvm_args.txt
+	rm -rf server_data/config/*
+	rm -rf server_data/logs/*
+	rm -rf server_data/eula.txt
+	rm -rf server_data/neoforge-*-installer.jar.log
+	rm -rf server_data/*json
+	@echo "Очистка завершена. Папка server_data готова к чистой установке."
+
+restart: clean
+	@echo "Запуск контейнера в фоновом режиме..."
+	docker compose up -d
+	@echo "Подключение к логам установщика (Ctrl+C для выхода из логов)..."
+	docker compose logs -f

@@ -7,7 +7,9 @@ bin/
 /run_server/
 /run_client/
 /run_game_test/
+*.log.gz
 *.log
+server_data/logs/*
 *.lck
 
 .idea/
@@ -26,3 +28,4 @@ bin/
 Thumbs.db
 
 local.properties
+server_data/crash-reports/*
