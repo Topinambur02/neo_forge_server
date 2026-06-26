@@ -1,7 +1,10 @@
-.PHONY: clean restart run stop
+.PHONY: clean restart run stop console
+
+init:
+	docker compose up -d
 
 run:
-	docker compose up -d
+	cd server_data && ./run.sh
 
 stop:
 	docker compose 
