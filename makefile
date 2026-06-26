@@ -4,7 +4,10 @@ run:
 	docker compose up -d
 
 stop:
-	docker compose down
+	docker compose 
+	
+console:
+	docker attach neoforge-server
 
 clean:
 	@echo "Остановка контейнеров..."

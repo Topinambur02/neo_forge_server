@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 if [ ! -f "run.sh" ]; then
     echo "Файл run.sh не найден. Идет первичная установка Neoforge..."
@@ -6,7 +7,13 @@ if [ ! -f "run.sh" ]; then
     INSTALLER=$(ls neoforge-*-installer.jar 2>/dev/null | head -n 1)
     
     if [ -n "$INSTALLER" ]; then
-        java -jar "$INSTALLER" --installServer
+        if java -jar "$INSTALLER" --installServer; then
+            echo "Установка успешно завершена."
+        else
+            echo "ОШИБКА: Установка прервалась!"
+            rm -f run.sh run.bat
+            exit 1
+        fi
     else
         echo "ОШИБКА: Файл run.sh не найден и установщик (installer.jar) отсутствует!"
         exit 1
