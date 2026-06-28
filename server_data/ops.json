@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "uuid": "ea4a8447-c758-364a-9d26-62b170ca2118",
+    "name": "Topinambur02",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "ecb024b9-85c3-3f2b-8313-a6e448004cb9",
+    "name": "topinambur02",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
