@@ -2,6 +2,7 @@ services:
   neoforge:
     image: eclipse-temurin:21-jre-jammy
     container_name: neoforge-server
+    user: "1000:1000"
     working_dir: /server
     command: bash entrypoint.sh
     ports:

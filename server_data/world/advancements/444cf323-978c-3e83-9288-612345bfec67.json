@@ -61,15 +61,9 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/onion_soup": {
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
     "criteria": {
-      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
-    },
-    "done": true
-  },
-  "farmersdelight:main/get_fd_seed": {
-    "criteria": {
-      "onion": "2026-06-27 15:51:49 +0300"
+      "has_dandelion": "2026-06-27 15:47:57 +0300"
     },
     "done": true
   },
@@ -85,45 +79,15 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/dumplings": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2026-06-27 15:48:07 +0300"
     },
     "done": true
   },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2026-06-27 15:48:21 +0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
       "in_water": "2026-06-27 15:48:07 +0300"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/fish_stew": {
-    "criteria": {
-      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
-    "criteria": {
-      "has_dandelion": "2026-06-27 15:47:57 +0300"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/food/barbecue_stick": {
-    "criteria": {
-      "has_onion": "2026-06-27 15:51:49 +0300"
     },
     "done": true
   },
@@ -145,9 +109,21 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/fried_rice": {
+  "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
-      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
+      "in_water": "2026-06-27 15:48:07 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-06-27 15:48:07 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-06-27 15:48:21 +0300"
     },
     "done": true
   },
@@ -157,9 +133,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/transportation/mangrove_boat": {
+  "farmersdelight:recipes/cooking/onion_soup": {
     "criteria": {
-      "in_water": "2026-06-27 15:48:07 +0300"
+      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
+    },
+    "done": true
+  },
+  "farmersdelight:main/get_fd_seed": {
+    "criteria": {
+      "onion": "2026-06-27 15:51:49 +0300"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/dumplings": {
+    "criteria": {
+      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fish_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/barbecue_stick": {
+    "criteria": {
+      "has_onion": "2026-06-27 15:51:49 +0300"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fried_rice": {
+    "criteria": {
+      "has_any_ingredient": "2026-06-27 15:51:49 +0300"
     },
     "done": true
   },
@@ -178,12 +184,6 @@
   "farmersdelight:recipes/cooking/vegetable_soup": {
     "criteria": {
       "has_any_ingredient": "2026-06-27 15:51:49 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2026-06-27 15:48:07 +0300"
     },
     "done": true
   },
